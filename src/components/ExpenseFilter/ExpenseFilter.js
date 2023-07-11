@@ -3,7 +3,7 @@ import './ExpenseFilter.css';
 
 const ExpenseFilter = ({onFilter, year}) => {
     const selectChangeHandler = (event) => {
-        onFilter(event.target.value);
+      onFilter(event.target.value);
     };
 
   return (
@@ -11,6 +11,7 @@ const ExpenseFilter = ({onFilter, year}) => {
       <div className='expenses-filter__control'>
         <label>Filter by year</label>
         <select value={year} onChange={selectChangeHandler}>
+          <option value='2023'>2023</option>
           <option value='2022'>2022</option>
           <option value='2021'>2021</option>
           <option value='2020'>2020</option>
